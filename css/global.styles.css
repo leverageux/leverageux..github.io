@@ -165,6 +165,7 @@ body {
   align-items: flex-end;
   white-space: nowrap;
   color: #A6A6A6;
+  font-weight: bold;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.04em;
@@ -185,6 +186,8 @@ body {
 }
 .header__menu_link.active a {
   color: #00A2B8;
+  font-weight: normal;
+  font-family: EkibastuzBlack;
 }
 .link__line {
   display: none;
