@@ -965,7 +965,11 @@ textarea:focus {
     height: 745px;
   }
 }
-@media screen and (max-width: 1446px) {
+@media screen and (max-width: 1445px) {
+  .section__real, .section__crypt,
+  .section__money {
+    height: 720px;
+  }
   .footer {
     height: 950px;
   }
@@ -998,7 +1002,7 @@ textarea:focus {
   }
   .section__real, .section__crypt,
   .section__money {
-    height: 670px;
+    height: 675px;
   }
   .section__real {
     margin-top: 40px;
