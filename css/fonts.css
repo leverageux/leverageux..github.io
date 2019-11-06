@@ -1,0 +1,32 @@
+@font-face{
+font-family: 'Ekibastuz';
+src: url('../fonts/ekibastuz-regular.eot');
+src: url('../fonts/ekibastuz-regular.eot?iefix') format('eot'),
+url('../fonts/ekibastuz-regular.woff') format('woff'),
+url('../fonts/ekibastuz-regular.ttf') format('truetype'),
+url('../fonts/ekibastuz-regular.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Ekibastuz';
+src: url('../fonts/ekibastuz-light.eot');
+src: url('../fonts/ekibastuz-light?iefix') format('eot'),
+url('../fonts/ekibastuz-light.woff') format('woff'),
+url('../fonts/ekibastuz-light.ttf') format('truetype'),
+url('../fonts/ekibastuz-light.svg#webfont') format('svg');
+font-weight: lighter;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Ekibastuz';
+src: url('../fonts/ekibastuz-bold.eot');
+src: url('../fonts/ekibastuz-bold.eot?iefix') format('eot'),
+url('../fonts/ekibastuz-bold.woff') format('woff'),
+url('../fonts/ekibastuz-bold.ttf') format('truetype'),
+url('../fonts/ekibastuz-bold.svg#webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
