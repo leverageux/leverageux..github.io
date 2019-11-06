@@ -81,6 +81,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn:hover {
   background: #fff;
@@ -110,6 +111,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
+  -webkit-tap-highlight-color: transparent;
 }
 .header__btn_om:hover span {
   background: #00A2B8;
