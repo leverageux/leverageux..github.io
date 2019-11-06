@@ -600,6 +600,7 @@ body {
   line-height: 21px;
   text-decoration-line: underline;
   color: #00A2B8;
+  white-space: nowrap;
 }
 .section__description a:hover {
   text-decoration: none;
