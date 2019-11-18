@@ -328,7 +328,7 @@
   .about__lines {
     height: 580px;
     bottom: 236px;
-    background-position: 35% top;
+    background-position: 35% 5%;
     background-size: 180%;
     -o-background-size: 180%;
     -webkit-background-size: 180%;
