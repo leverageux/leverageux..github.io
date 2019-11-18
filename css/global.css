@@ -2337,13 +2337,13 @@ textarea:focus {
 @media screen and (max-width: 560px) {
   .section__main {
     height: 625px;
-    background-image: url(../img/home/main_mobile.svg);
+    background-image: url(../img/home/main_mobile.png);
     -o-background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -khtml-background-size: cover;
     background-size: cover;
-    background-position: center -135px;
+    background-position: center 0;
   }
   .main__lines {
     height: 165px;
@@ -2458,9 +2458,6 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 460px) {
-  .section__main {
-    background-position: center -115px;
-  }
   .header__btn_ep {
     width: 210px;
   }
@@ -2495,9 +2492,6 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 440px) {
-  .section__main {
-    background-position: center -95px;
-  }
   .header.scrolled .header__btn_ep {
     display: none;
   }
@@ -2525,15 +2519,7 @@ textarea:focus {
     -khtml-background-size: 200%;
   }
 }
-@media screen and (max-width: 420px) {
-  .section__main {
-    background-position: center -60px;
-  }
-}
 @media screen and (max-width: 400px) {
-  .section__main {
-    background-position: center -30px;
-  }
   .modal-content {
     width: calc(90% - 50px);
     padding: 25px;
@@ -2543,11 +2529,6 @@ textarea:focus {
   }
   .footer__lines {
     background-position: 32% 80%;
-  }
-}
-@media screen and (max-width: 380px) {
-  .section__main {
-    background-position: center 0;
   }
 }
 @media screen and (max-width: 360px) {
