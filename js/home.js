@@ -8,17 +8,17 @@ $(document).ready(function(){
 	        $('.section__idea').addClass('animated');
 		}
 		// animated section real
-		var sectionReal = $('.section__real').offset().top;
+		var sectionReal = $('.section__real').offset().top - 100;
 		if(scrollWindow > sectionReal){
 	        $('.section__real').addClass('animated');
 		}
 		// animated section real
-		var sectionCrypt = $('.section__crypt').offset().top;
+		var sectionCrypt = $('.section__crypt').offset().top - 100;
 		if(scrollWindow > sectionCrypt){
 	        $('.section__crypt').addClass('animated');
 		}
 		// animated section real
-		var sectionMoney = $('.section__money').offset().top;
+		var sectionMoney = $('.section__money').offset().top - 100;
 		if(scrollWindow > sectionMoney){
 	        $('.section__money').addClass('animated');
 		}
