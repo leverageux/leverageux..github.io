@@ -1827,6 +1827,14 @@ textarea:focus {
     height: 65px;
     width: calc(100% - 30px);
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select:    none;
+    -ms-user-select:     none;
+    user-select:         none;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 @media screen and (max-width: 1187px) {
