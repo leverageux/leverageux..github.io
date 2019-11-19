@@ -29,7 +29,6 @@ $(document).ready(function(){
 		var block_show = null;
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
-		var dh = $(document).height();
 
 		// animated how
 		var howTop = $('.how__svg').offset().top;
