@@ -6,6 +6,7 @@
 		<meta name="theme-color" content="#330099">
 		<meta name="description" content="FinTech & DataTech Design">
 
+		<link rel="icon" href="favicon.ico" type="img/favicon.ico" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/normalize.css">
@@ -50,11 +51,11 @@
 	    				<a href="./about.html">About</a>
 	    				<div class="link__line"></div>
 	    			</div>
-	    			<div class="header__menu_link">
+	    			<!-- <div class="header__menu_link">
 	    				<img class="menu__link_img" src="./img/careers.svg" alt="careers">
 	    				<a href="#">Careers</a>
 	    				<div class="link__line"></div>
-	    			</div>
+	    			</div> -->
 	    			<div class="header__menu_line"></div>
 	    		</nav>
     		</div>
@@ -254,7 +255,7 @@
 							<h6 class="info__title">Development Support</h6>
 							<div class="info__check none"></div>
 						</div>
-						<button class="btn btn__buy" type="submit">Buy Now</button>
+						<button class="btn btn__buy btn__starter" type="submit">Buy Now</button>
 					</div>
 					<div class="plan__block basic">
 						<h5 class="plan__block_title">Basic<br><span>(Concept Design)</span></h5>
@@ -309,7 +310,7 @@
 							<h6 class="info__title">Development Support</h6>
 							<div class="info__check none"></div>
 						</div>
-						<button class="btn btn__buy" type="submit">Buy Now</button>
+						<button class="btn btn__buy btn__basic" type="submit">Buy Now</button>
 					</div>
 					<div class="plan__block startup">
 						<h5 class="plan__block_title">Startup MVP<br><span>(Popular)</span></h5>
@@ -364,7 +365,7 @@
 							<h6 class="info__title">Development Support</h6>
 							<div class="info__check text">1 month</div>
 						</div>
-						<button class="btn btn__buy" type="submit">Buy Now</button>
+						<button class="btn btn__buy btn__startup" type="submit">Buy Now</button>
 					</div>
 					<div class="plan__block business">
 						<h5 class="plan__block_title">business</h5>
@@ -419,7 +420,26 @@
 							<h6 class="info__title">Development Support</h6>
 							<div class="info__check text">optional</div>
 						</div>
-						<button class="btn btn__buy" type="submit">Buy Now</button>
+						<button class="btn btn__buy btn__business" type="submit">Buy Now</button>
+					</div>
+					<div id="buyModal" class="modal">
+						<div class="modal-content">
+							<span class="close">
+								<svg xml:space="preserve" enable-background="new 0 0 15 15" height="15px" id="cross" version="1.1" viewBox="0 0 15 15" width="15px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+									<path d="M5.792,7.499L0,0.707l0.708-0.706L7.497,5.79L7.5,5.793L14.293,0L15,0.707L9.207,7.5l0.001,0.001L15,14.293
+									l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
+								</svg>
+							</span>
+							<form class="registration form__buy">
+								<div id="formBuyTitle" class="form__buy_title"></div>
+								<input type="text" id="plan" name="plan">
+								<input type="text" id="name" name="user_name" placeholder="Name" autofocus>
+								<input maxlength="50" name="email" placeholder="Email" type="email">
+								<textarea name="about_myself" placeholder="Give us a short description of your project."></textarea>
+								<button class="btn btn_send" type="submit">Buy Now</button>
+							</form>
+						</div>
+						<div class="modal__back"></div>
 					</div>
 				</div>
 				<h2 class="section__plans_title addons__title">Addons</h2>
@@ -524,7 +544,6 @@
 				</div>
 			</div>
 			
-
 			<div id="regModal" class="modal">
 				<div class="modal-content">
 					<span class="close">
