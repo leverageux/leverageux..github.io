@@ -74,7 +74,7 @@
 			<div class="estimate__container">
 				<h1 class="estimate__container_title">Get an estimate</h1>
 				<p class="estimate__container_description">Fill out this simple form. Our team will contact you promptly to discuss next steps.</p>
-				<form class="estimate__form">
+				<div class="estimate__form">
 					<div class="estimate__form_block main__form">
 						<div class="main__form_block main__form__checkboxes main__block_first">
 							<div class="main__block_namber">
@@ -82,24 +82,24 @@
 								<p class="namber__block_txt">What is<br> the device of<br> your project?</p>
 							</div>
 							<div class="main__block_checkbox">
-								<label class="checkbox__block">
+								<label class="checkbox__block device">
 									<img class="checkbox__block_img" src="./img/estimate/desktop.svg" alt="desktop">
 									<p class="checkbox__block_name">Desktop</p>
-									<input class="checkbox" type="checkbox"/>
+									<input id="desktop" class="checkbox" type="checkbox" name="device" value="Desktop"/>
 									<span class="checkbox__check"></span>
 								</label>
 								<div class="line__block"></div>
-								<label class="checkbox__block">
+								<label class="checkbox__block device">
 									<img class="checkbox__block_img" src="./img/estimate/mobile.svg" alt="mobile">
 									<p class="checkbox__block_name">Mobile</p>
-									<input class="checkbox" type="checkbox"/>
+									<input id="mobile" class="checkbox" type="checkbox" name="device" value="Mobile"/>
 									<span class="checkbox__check"></span>
 								</label>
 								<div class="line__block"></div>
-								<label class="checkbox__block">
+								<label class="checkbox__block device">
 									<img class="checkbox__block_img" src="./img/estimate/other.svg" alt="other">
 									<p class="checkbox__block_name">Other</p>
-									<input class="checkbox" type="checkbox"/>
+									<input id="other" class="checkbox" type="checkbox" name="device" value="Other"/>
 									<span class="checkbox__check"></span>
 								</label>
 							</div>
@@ -111,24 +111,24 @@
 								<p class="namber__block_txt">What is<br>the scope of<br>your project?</p>
 							</div>
 							<div class="main__block_checkbox">
-								<label class="checkbox__block">
+								<label class="checkbox__block scope">
 									<img class="checkbox__block_img" src="./img/estimate/design.svg" alt="design">
 									<p class="checkbox__block_name">Design</p>
-									<input class="checkbox" type="checkbox"/>
+									<input id="design" class="checkbox" type="checkbox" name="scope" value="Design"/>
 									<span class="checkbox__check"></span>
 								</label>
 								<div class="line__block"></div>
-								<label class="checkbox__block">
+								<label class="checkbox__block scope">
 									<img class="checkbox__block_img" src="./img/estimate/frontend.svg" alt="frontend">
 									<p class="checkbox__block_name">Front-End</p>
-									<input class="checkbox" type="checkbox"/>
+									<input id="frontEnd" class="checkbox" type="checkbox" name="scope" value="Front-End"/>
 									<span class="checkbox__check"></span>
 								</label>
 								<div class="line__block"></div>
-								<label class="checkbox__block">
+								<label class="checkbox__block scope">
 									<img class="checkbox__block_img" src="./img/estimate/backend.svg" alt="other">
 									<p class="checkbox__block_name">Back-End</p>
-									<input class="checkbox" type="checkbox"/>
+									<input id="backEnd" class="checkbox" type="checkbox" name="scope" value="Back-End"/>
 									<span class="checkbox__check"></span>
 								</label>
 							</div>
@@ -140,7 +140,7 @@
 								<p class="namber__block_txt">Fill the form<br>and get an<br>estimate</p>
 							</div>
 							<div class="main__block_inputs">
-								<input class="main__input" id="email" maxlength="50" name="email" type="email"placeholder="Email">
+								<input class="main__input" id="email" name="email" type="email" placeholder="Email">
 								<input class="main__input" id="firstName" name="firstName" type="text" placeholder="First Name"/>
 								<input class="main__input" id="lastName" name="lastName" type="text" placeholder="Last Name"/>
 								<input class="main__input" id="phone" name="phone" type="tel" placeholder="Phone Number"/>
@@ -149,24 +149,24 @@
 					</div>
 					<div class="estimate__form_block secondary__form">
 						<p class="secondary__form_mailink">Need NDA first? E-mail us at <a href="mailto:hello@leverageux.com">hello@Leverageux.com</a></p>
-						<textarea class="secondary__form_text" placeholder="Short Description Of Your Idea"></textarea>
+						<textarea id="descrEstimate" name="description" class="secondary__form_text" placeholder="Short Description Of Your Idea"></textarea>
 						<p class="secondary__form_description">LeverageUX is committed to processing the above information in order to contact you and talk about your project. Other information is used for statistical purposes and, from time to time, we would like to contact you about our other products and services, as well as other content that may be of interest to you. If you consent to contact you for this purposes, please tick below:</p>
 						<div class="secondary__form_radio">
-							<label class="radio__block">
-								<input class="secondary__radio" id="project" type="radio" name="radio" value="project">
+							<label class="radio__block" id="project">
+								<input class="secondary__radio" type="radio" name="radio" value="project">
 								<span class="radio__check"></span>
-								<p class="secondary__radio_name">I agree to talk about my project with LeverageUX.</p>
+								<p class="secondary__radio_name agree__project">I agree to talk about my project with LeverageUX.</p>
 							</label>
-							<label class="radio__block">
-								<input class="secondary__radio" id="communications" type="radio" name="radio" value="communications">
+							<label class="radio__block" id="communications">
+								<input class="secondary__radio" type="radio" name="radio" value="communications">
 								<span class="radio__check"></span>
-								<p class="secondary__radio_name">I agree to receive other communications from LeverageUX.</p>
+								<p class="secondary__radio_name agree__communications">I agree to receive other communications from LeverageUX.</p>
 							</label>
 						</div>
 						<p class="secondary__form_description">You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices please view our Privacy Policy.</p>
-						<button class="btn btn__estimate" type="submit">Estimate Project</button>
+						<button class="btn btn__estimate" id="formBtnEstimate">Estimate Project</button>
 					</div>
-				</form>
+				</div>
 			</div>
 
 		</main>
@@ -193,8 +193,6 @@
 					<a href="mailto:hello@leverageux.com">Hello@Leverageux.Com</a>
 				</div>
 			</div>
-			
-
 			<div id="regModal" class="modal">
 				<div class="modal-content">
 					<span class="close">
@@ -203,12 +201,16 @@
 							l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
 						</svg>
 					</span>
-					<form class="registration">
-						<input type="text" id="name" name="user_name" placeholder="Name" autofocus>
-						<input maxlength="50" name="email" placeholder="Email" type="email">
-						<textarea name="about_myself" placeholder="Give us a short description of the info you want us to provide. Thanks"></textarea>
-						<button class="btn btn_send" type="submit">Let's do it</button>
-					</form>
+					<div class="form">
+						<div class="form__block">
+							<input type="text" id="nameFooter" name="user_name" placeholder="Name" autofocus>
+							<input type="email" id="emailFooter" name="email" placeholder="Email">
+							<textarea id="descrFooter" name="description" placeholder="Give us a short description of the info you want us to provide. Thanks"></textarea>
+							<button class="btn btn_send" id="formBtnFooter">Let's do it</button>
+						</div>
+						<div class="send__message">Thanks, your letter sent.</div>
+						<div class="notsend__message">Sorry, your letter not sent.</div>
+					</div>
 				</div>
 				<div class="modal__back"></div>
 			</div>

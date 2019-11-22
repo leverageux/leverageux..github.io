@@ -1415,13 +1415,25 @@ body {
   font-size: 18px;
   color: #fff;
 }
-.registration {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 344px;
+}
+.form__block.disable {
+  display: none;
+}
+.send__message,
+.notsend__message {
+  display: none;
+  color: #666;
+}
+.send__message.active,
+.notsend__message.active {
+  display: inline-block;
 }
 input {
   width: 100%;

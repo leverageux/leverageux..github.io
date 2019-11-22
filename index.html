@@ -290,8 +290,6 @@
 					<a href="mailto:hello@leverageux.com">Hello@Leverageux.Com</a>
 				</div>
 			</div>
-			
-
 			<div id="regModal" class="modal">
 				<div class="modal-content">
 					<span class="close">
@@ -300,12 +298,16 @@
 							l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
 						</svg>
 					</span>
-					<form class="registration">
-						<input type="text" id="name" name="user_name" placeholder="Name" autofocus>
-						<input maxlength="50" name="email" placeholder="Email" type="email">
-						<textarea name="about_myself" placeholder="Give us a short description of the info you want us to provide. Thanks"></textarea>
-						<button class="btn btn_send" type="submit">Let's do it</button>
-					</form>
+					<div class="form">
+						<div class="form__block">
+							<input type="text" id="nameFooter" name="user_name" placeholder="Name" autofocus>
+							<input type="email" id="emailFooter" name="email" placeholder="Email">
+							<textarea id="descrFooter" name="description" placeholder="Give us a short description of the info you want us to provide. Thanks"></textarea>
+							<button class="btn btn_send" id="formBtnFooter">Let's do it</button>
+						</div>
+						<div class="send__message">Thanks, your letter sent.</div>
+						<div class="notsend__message">Sorry, your letter not sent.</div>
+					</div>
 				</div>
 				<div class="modal__back"></div>
 			</div>
