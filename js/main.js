@@ -103,7 +103,7 @@ $(document).ready(function(){
 		var email = $('#emailFooter').val();
 		var descr = $('#descrFooter').val();
 		var xhr = new XMLHttpRequest();
-    	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6761453/d9f6ca4d-ad87-409e-a1f0-b1cdedea864a'
+    	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6484354/ba6957be-53f3-4cc6-877f-d0dc0d677081'
     	// Example request JSON:
 	    var data = {
 	      "fields": [
@@ -116,7 +116,7 @@ $(document).ready(function(){
 	          "value": email
 	        },
 	        {
-	          "name": "description",
+	          "name": "company",
 	          "value": descr
 	        }
 	      ]

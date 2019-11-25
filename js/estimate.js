@@ -39,16 +39,16 @@ $(document).ready(function(){
 		var scopeStr = scope.toString();
 
 		var xhr = new XMLHttpRequest();
-    	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6761453/b7778c87-9f09-4c9a-9864-0ed0a3d38edd'
+    	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6484354/0faaa5e1-3afa-4aae-b4c0-e6b141f4a3d8'
     	// Example request JSON:
 	    var data = {
 	      "fields": [
 	      	{
-	          "name": "device",
+	          "name": "address",
 	          "value": deviceStr
 	        },
 	        {
-	          "name": "scope",
+	          "name": "state",
 	          "value": scopeStr
 	        },
 	      	{
@@ -68,11 +68,11 @@ $(document).ready(function(){
 	          "value": phone
 	        },
 	        {
-	          "name": "desc",
+	          "name": "company",
 	          "value": descr
 	        },
 	        {
-	          "name": "agree",
+	          "name": "city",
 	          "value": agree
 	        }
 	      ]

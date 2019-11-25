@@ -41,12 +41,12 @@ $(document).ready(function(){
 		var email = $('#emailBuy').val();
 		var descr = $('#descrBuy').val();
 		var xhr = new XMLHttpRequest();
-    	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6761453/86d2b4ac-2c32-4d12-84b2-9b3aff2696e3'
+    	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6484354/4d3b0fbb-9e23-4a61-abab-95e1acb128e7'
     	// Example request JSON:
 	    var data = {
 	      "fields": [
 	      	{
-	          "name": "plan",
+	          "name": "city",
 	          "value": plan
 	        },
 	        {
@@ -58,7 +58,7 @@ $(document).ready(function(){
 	          "value": email
 	        },
 	        {
-	          "name": "descr",
+	          "name": "company",
 	          "value": descr
 	        }
 	      ]
