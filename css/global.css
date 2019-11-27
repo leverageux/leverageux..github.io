@@ -343,7 +343,7 @@ body {
   bottom: 65px;
 }
 .section__main.animated .main__chart {
-  animation: mainChart 3s 1 linear;
+  animation: mainChart 2.5s 1 linear;
 }
 @keyframes mainChart {
   0% {
@@ -388,7 +388,7 @@ body {
   bottom: 740px;
 }
 .section__main.animated .main__tablet_shadow {
-  animation: mainTabletShadow 3s 1 linear;
+  animation: mainTabletShadow 2.5s 1 linear;
 }
 @keyframes mainTabletShadow {
   0% {
@@ -412,7 +412,7 @@ body {
   bottom: 605px;
 }
 .section__main.animated .main__tablet_shadow_lines {
-  animation: mainTabletShadowLines 4s 1 linear;
+  animation: mainTabletShadowLines 3.5s 1 linear;
 }
 @keyframes mainTabletShadowLines {
   0% {
@@ -436,7 +436,7 @@ body {
   z-index: 9;
 }
 .section__main.animated .main__container {
-  animation: blockOpacity 4s 1 linear;
+  animation: blockOpacity 3.5s 1 linear;
 }
 @keyframes blockOpacity {
   0% {
@@ -1627,7 +1627,7 @@ textarea:focus {
     bottom: 250px;
   }
   .section__main.animated .main__chart {
-    animation: mainChartTwo 3.0s 1 linear;
+    animation: mainChartTwo 2.5s 1 linear;
   }
   @keyframes mainChartTwo {
     0% {
@@ -1650,7 +1650,7 @@ textarea:focus {
     bottom: 640px;
   }
   .section__main.animated .main__tablet_shadow {
-    animation: mainTabletShadowTwo 3s 1 linear;
+    animation: mainTabletShadowTwo 2.5s 1 linear;
   }
   @keyframes mainTabletShadowTwo {
     0% {
