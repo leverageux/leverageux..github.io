@@ -226,11 +226,6 @@
   max-width: 330px;
   margin-top: 0;
 }
-#email {order: 1;}
-#firstName {order: 3;}
-#lastName {order: 2;}
-#phone {order: 4;}
-
 .secondary__form {
   position: relative;
   display: flex;
@@ -436,11 +431,7 @@
     max-width: 100%;
     width: 100%;
   }
-  #email {order: 1;}
-  #firstName {order: 2;}
-  #lastName {order: 3;}
   #phone {
-    order: 4;
     margin-bottom: 0;
   }
   .secondary__form {
